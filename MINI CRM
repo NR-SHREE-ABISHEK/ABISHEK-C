@@ -27,8 +27,7 @@ for(int i = 0; i < totalCustomers; i++)
 {
 printf("\nID: %d\n", customers[i].id);
 printf("Name: %s\n", customers[i].name);
-printf("Phone: %s\n", customers[i].phone);
-printf("Status: %s\n", customers[i].status);
+printf("Phone: %d\n", customers[i].phone);
 }
 }
 

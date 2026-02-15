@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <string.h>
+struct Customer
+{
+int id;
+char name[50];
+char phone[15];
+char status[20];
+};
+
+struct Customer customers[100]; 
+int totalCustomers = 0;           
+
+
+void addCustomer()
+{
+customers[totalCustomers].id = totalCustomers + 1;
+printf("Enter Name: ");
+scanf(" %[^\n]", customers[totalCustomers].name);
+printf("Enter Phone: ");
+scanf("%d", customers[totalCustomers].phone);
+strcpy(customers[totalCustomers].status, "New");
+printf("Customer Added Successfully!\n");
+}
+
+void displayCustomers()
+{
+for(int i = 0; i < totalCustomers; i++)
+{
+printf("\nID: %d\n", customers[i].id);
+printf("Name: %s\n", customers[i].name);
+printf("Phone: %s\n", customers[i].phone);
+printf("Status: %s\n", customers[i].status);
+}
+}
+
+
+int main()
+{
+int choice;
+while(1)
+{
+printf("\n==== MINI CRM ====\n");
+printf("1. Add Customer\n");
+printf("2. Display Customers\n");
+printf("3. Exit\n");
+printf("Enter Choice: ");
+scanf("%d", &choice);
+if(choice == 1)
+{
+addCustomer();
+}
+else if(choice == 2)
+{
+displayCustomers();
+}
+else if(choice == 3)
+{
+ break;
+ }
+ else {
+  printf("Invalid Choice!\n");
+  }
+    }
+
+    return 0;
+}

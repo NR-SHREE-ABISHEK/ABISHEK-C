@@ -40,7 +40,7 @@ else
 {
 balance -= amount;
 transactionCount++;
-printf("Please collect your cash.\n");
+printf("\n withdraw sucessfull");
 }
 }
 

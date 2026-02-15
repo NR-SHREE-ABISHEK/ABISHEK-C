@@ -1,11 +1,12 @@
 #include <stdio.h>
-float balance = 1000.0;
-int transactionCount = 0;
+float balance= 1000.0;
+int transactionCount= 0;
 void checkBalance()
 {
 printf("Current Balance: %.2f\n", balance);
 }
-void deposit() {
+void deposit()
+{
 float amount;
 printf("Enter amount to deposit: ");
 scanf("%f", &amount);
@@ -14,6 +15,9 @@ if (amount <= 0)
 printf("Invalid amount!\n");
 return;
 }
+else
+{
+printf("processing")
 balance += amount;
 transactionCount++;
 printf("Amount deposited successfully!\n");

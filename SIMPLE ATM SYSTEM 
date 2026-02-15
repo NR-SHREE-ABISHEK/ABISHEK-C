@@ -12,7 +12,7 @@ printf("Enter amount to deposit: ");
 scanf("%f", &amount);
 if (amount <= 0)
 {
-printf("Invalid amount!\n");
+printf("\n Invalid amount!");
 return;
 }
 else

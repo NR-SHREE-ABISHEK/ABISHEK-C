@@ -35,8 +35,6 @@ printf("Phone: %d\n", customers[i].phone);
 int main()
 {
 int choice;
-while(1)
-{
 printf("\n==== MINI CRM ====\n");
 printf("1. Add Customer\n");
 printf("2. Display Customers\n");
@@ -58,7 +56,6 @@ else if(choice == 3)
  else {
   printf("Invalid Choice!\n");
   }
-    }
 
     return 0;
 }

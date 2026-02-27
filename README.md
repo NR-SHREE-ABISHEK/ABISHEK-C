@@ -7,4 +7,5 @@ This repository contains C programs written for learning and practice. It focuse
 This is a console-based Mini CRM system developed using C programming to manage customer records efficiently. The project simulates basic real-world customer management operations with a simple and structured design. It focuses on strengthening core programming logic and data handling concepts.
 
 *Implemented add, search, update, and delete customer features.
+
 *Used structures for organized data storage.

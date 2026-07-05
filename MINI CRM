@@ -13,8 +13,8 @@ int totalCustomers = 0;
 
 void addCustomer()
 {
-total coustomers=total customers +1;
-customers[totalCustomers].id = totalCustomers
+totalCustomers=totalCustomers +1;
+customers[totalCustomers].id = totalCustomers;
 printf("Enter Name: ");
 scanf(" %[^\n]", customers[totalCustomers].name);
 printf("Enter Phone: ");
@@ -36,6 +36,8 @@ printf("Phone: %d\n", customers[i].phone);
 int main()
 {
 int choice;
+for(int p=1;p<=3;p++)
+{
 printf("\n==== MINI CRM ====\n");
 printf("1. Add Customer\n");
 printf("2. Display Customers\n");
@@ -52,10 +54,11 @@ displayCustomers();
 }
 else if(choice == 3)
 {
- break;
+ printf("bye");
  }
  else {
   printf("Invalid Choice!\n");
+  }
   }
 
     return 0;

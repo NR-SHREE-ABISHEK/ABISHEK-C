@@ -13,7 +13,8 @@ int totalCustomers = 0;
 
 void addCustomer()
 {
-customers[totalCustomers].id = totalCustomers + 1;
+total coustomers=total customers +1
+customers[totalCustomers].id = totalCustomers
 printf("Enter Name: ");
 scanf(" %[^\n]", customers[totalCustomers].name);
 printf("Enter Phone: ");
